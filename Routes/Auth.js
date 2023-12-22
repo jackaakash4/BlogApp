@@ -1,8 +1,11 @@
-const express = require('express');
-const router = express.Router();
 const User = require('../Models/UserSchema')
 
-const user = require('../Models/UserSchema');
+//express code
+const express = require('express');
+
+//mini-app like app = express
+const router = express.Router();
+
 
 router.get('/test', async(req, res)=>{
     res.json({
